@@ -1,6 +1,6 @@
 # PulsePath AI
 
-PulsePath AI is a hackathon-ready healthcare MVP for outpatient clinics. It detects care gaps, prioritizes outreach, drafts patient communication, and tracks replies and bookings in one workspace.
+PulsePath AI is a healthcare operations MVP that helps outpatient clinics detect care gaps, prioritize patient follow-ups, approve outreach, and track bookings from a single dashboard.
 
 ## Why this idea
 
