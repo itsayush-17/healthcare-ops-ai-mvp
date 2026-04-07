@@ -1,0 +1,12 @@
+{
+  "name": "pulsepath-ai",
+  "version": "1.0.0",
+  "description": "PulsePath AI is a hackathon-ready healthcare MVP for care-gap detection and outreach orchestration.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "validate": "node scripts/validate.js"
+  },
+  "license": "MIT"
+}

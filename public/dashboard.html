@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulsePath AI Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="theme-dashboard">
+    <div class="page-shell dashboard-shell">
+      <header class="topbar">
+        <a class="brand" href="/">
+          <span class="brand-mark">P</span>
+          <span class="brand-text">
+            <strong>PulsePath AI</strong>
+            <small>Ops copilot for care-gap recovery</small>
+          </span>
+        </a>
+        <nav class="topnav">
+          <a href="/">Landing Page</a>
+          <a href="#queue">Queue</a>
+          <a href="#inbox">Inbox</a>
+        </nav>
+      </header>
+
+      <main class="dashboard-layout">
+        <section class="dashboard-hero">
+          <div>
+            <div class="eyebrow">Interactive MVP</div>
+            <h1>Care-gap operations dashboard</h1>
+            <p>
+              Review priorities, approve outreach, and track bookings.
+            </p>
+          </div>
+          <div class="toolbar">
+            <label class="file-input">
+              <input id="csvInput" type="file" accept=".csv" />
+              <span>Upload CSV</span>
+            </label>
+            <button id="resetDemo" class="button button-secondary">Reset Demo</button>
+          </div>
+        </section>
+
+        <section class="stats-grid" id="statsGrid"></section>
+
+        <section class="insight-band">
+          <div>
+            <label>Top insight</label>
+            <strong id="headlineInsight">Loading recommendation...</strong>
+          </div>
+          <p id="headlineReason"></p>
+        </section>
+
+        <section class="workspace-grid">
+          <div class="panel panel-large" id="queue">
+            <div class="panel-header">
+              <div>
+                <label>Queue</label>
+                <h2>Patients for outreach</h2>
+              </div>
+              <div class="panel-actions">
+                <button class="chip chip-active" data-filter="all">All</button>
+                <button class="chip" data-filter="high">High</button>
+                <button class="chip" data-filter="discharge">Discharge</button>
+                <button class="chip" data-filter="diabetes">Diabetes</button>
+              </div>
+            </div>
+            <div id="queueList" class="queue-list"></div>
+          </div>
+
+          <div class="panel sticky-panel">
+            <div class="panel-header">
+              <div>
+                <label>Outreach</label>
+                <h2>Approval required</h2>
+              </div>
+            </div>
+            <div id="detailPanel" class="detail-panel"></div>
+          </div>
+        </section>
+
+        <section class="workspace-grid lower-grid">
+          <div class="panel" id="inbox">
+            <div class="panel-header">
+              <div>
+                <label>Inbox</label>
+                <h2>Replies and bookings</h2>
+              </div>
+            </div>
+            <div id="inboxList" class="inbox-list"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-header">
+              <div>
+                <label>Commercial</label>
+                <h2>Pricing and ROI</h2>
+              </div>
+            </div>
+            <div class="roi-stack">
+              <div class="roi-card">
+                <span>Starter</span>
+                <strong>Rs 25,000 / month</strong>
+                <small>1 clinic | 2,000 patients</small>
+              </div>
+              <div class="roi-card">
+                <span>Value driver</span>
+                <strong>More booked follow-ups</strong>
+                <small>Target ROI: 4-6x subscription cost</small>
+              </div>
+              <div class="roi-card">
+                <span>Expansion</span>
+                <strong>Refills, preventive, discharge, chronic care</strong>
+                <small>Start with one workflow, expand by template</small>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/dashboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+name,age,condition,segment,riskScore,overdueDays,gapType,preferredChannel,lastVisit,dischargeDate,annualScreeningDue,revenueAtRisk,coordinator,insurance,language
+Kiran Patel,64,Type 2 Diabetes,diabetes,84,21,HbA1c check overdue,WhatsApp,2026-02-03,,2026-03-01,13200,Priya,Corporate TPA,English
+Leena Sharma,57,Hypertension,primary-care,68,11,BP follow-up due,SMS,2026-02-20,,2026-06-10,6400,Ritu,Self-pay,English
+Rohit Nair,71,Congestive Heart Failure,discharge,93,3,Post-discharge follow-up missed,Call,2026-04-01,2026-03-31,2026-08-05,17600,Nisha,Medisure Plus,English
+Sara Thomas,46,Type 2 Diabetes,diabetes,76,19,Retinal screening overdue,WhatsApp,2026-01-28,,2026-02-25,9100,Anika,Corporate TPA,English
